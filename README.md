@@ -74,8 +74,7 @@ Simulated scenario, about 740 reports per run from three sources: 20 moving cont
 | | Seeds 42-61 (used while tuning) | Seeds 1000-1019 (fresh) |
 |---|---|---|
 | Contacts, pair precision / recall | 0.919 / 0.867 | 0.922 / 0.872 |
-| Call-for-fservice-monitoring interfaces, UI, a deployable service, security labelling.
-- Fusion was tested only on a simulator I wrote, with noise and error rates I chose. It is not a track filter: there is no Kalman filtering, no sensor model and no handling of zone boundaries (grids in different zones are not compared). Treat the numbers as a check that the logic behaves sensibly, not as expected field performan/ 0.969 |
+| Call-for-fire targets, pair precision / recall | 0.998 / 0.951 | 1.000 / 0.969 |
 | MEDEVAC and logistics, pair precision / recall | 1.000 / 1.000 | 1.000 / 1.000 |
 | Fused contact class: correct / unknown / wrong | 92.9% / 1.9% / 5.1% | 92.8% / 2.1% / 5.1% |
 | Fused target type: correct / wrong | 96.4% / 3.6% | 94.8% / 5.2% |
@@ -97,7 +96,8 @@ Simulated scenario, about 740 reports per run from three sources: 20 moving cont
 - The sender handles one message at a time with back-off, so head-of-line blocking inflates latency. Read the numbers as comparisons between encodings, not as predictions.
 - Compression is a catalogue-aware binary encoding compared with zlib, not W3C EXI.
 - The 16-bit check detects accidental errors, not tampering. Message authentication is future work.
-- Not done: fusion, service-monitoring interfaces, UI, a deployable service.
+- Not done: service-monitoring interfaces, UI, a deployable service, security labelling.
+- Fusion was tested only on a simulator I wrote, with noise and error rates I chose. It is not a track filter: there is no Kalman filtering, no sensor model and no handling of zone boundaries (grids in different zones are not compared). Treat the numbers as a check that the logic behaves sensibly, not as expected field performance.
 - Extraction was tested only on messages the developer wrote, knowing the cue lists, so real operator text (typos, shorthand, voice transcripts) will score lower. 36 messages is a small sample; treat the percentages as indicative.
 
 ## Licence
