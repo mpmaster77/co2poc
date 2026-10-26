@@ -1,0 +1,2769 @@
+[
+  {
+    "id": "E1",
+    "type": "CONTACT",
+    "confidence": 1.0,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R1",
+        "action": "created"
+      },
+      {
+        "id": "R18",
+        "action": "updated"
+      },
+      {
+        "id": "R92",
+        "action": "updated"
+      },
+      {
+        "id": "R108",
+        "action": "updated"
+      },
+      {
+        "id": "R130",
+        "action": "updated"
+      },
+      {
+        "id": "R207",
+        "action": "updated"
+      },
+      {
+        "id": "R249",
+        "action": "updated"
+      },
+      {
+        "id": "R267",
+        "action": "repeated"
+      },
+      {
+        "id": "R279",
+        "action": "updated"
+      },
+      {
+        "id": "R281",
+        "action": "repeated"
+      },
+      {
+        "id": "R342",
+        "action": "repeated"
+      },
+      {
+        "id": "R359",
+        "action": "updated"
+      },
+      {
+        "id": "R437",
+        "action": "updated"
+      },
+      {
+        "id": "R451",
+        "action": "updated"
+      },
+      {
+        "id": "R466",
+        "action": "updated"
+      },
+      {
+        "id": "R479",
+        "action": "updated"
+      },
+      {
+        "id": "R507",
+        "action": "repeated"
+      },
+      {
+        "id": "R508",
+        "action": "repeated"
+      },
+      {
+        "id": "R532",
+        "action": "updated"
+      },
+      {
+        "id": "R535",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R568",
+        "action": "updated"
+      },
+      {
+        "id": "R584",
+        "action": "repeated"
+      },
+      {
+        "id": "R602",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R713",
+        "action": "updated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "SHORE-2",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "HMCS-B",
+            "report": "R568",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R584",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R532",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241217ZOCT26",
+            "report": "R584",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241216ZOCT26",
+            "report": "R532",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241215ZOCT26",
+            "report": "R479",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "SURFACE",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "45.0635",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "45.0629",
+            "report": "R568",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "45.0654",
+            "report": "R584",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.0686",
+            "report": "R532",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-62.9699",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-62.9714",
+            "report": "R568",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "-62.9708",
+            "report": "R584",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-62.9749",
+            "report": "R532",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "NEUTRAL",
+        "from_report": "R130",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "UNKNOWN",
+            "report": "R1",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "127",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "131",
+            "report": "R568",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "124",
+            "report": "R584",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "128",
+            "report": "R532",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "8.4",
+        "from_report": "R713",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "8.7",
+            "report": "R568",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "9.1",
+            "report": "R584",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "8.9",
+            "report": "R532",
+            "source": "HMCS-A"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E2",
+    "type": "CONTACT",
+    "confidence": 1.0,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R2",
+        "action": "created"
+      },
+      {
+        "id": "R66",
+        "action": "updated"
+      },
+      {
+        "id": "R95",
+        "action": "updated"
+      },
+      {
+        "id": "R119",
+        "action": "updated"
+      },
+      {
+        "id": "R201",
+        "action": "updated"
+      },
+      {
+        "id": "R203",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R224",
+        "action": "repeated"
+      },
+      {
+        "id": "R297",
+        "action": "updated"
+      },
+      {
+        "id": "R303",
+        "action": "repeated"
+      },
+      {
+        "id": "R318",
+        "action": "repeated"
+      },
+      {
+        "id": "R324",
+        "action": "repeated"
+      },
+      {
+        "id": "R375",
+        "action": "updated"
+      },
+      {
+        "id": "R385",
+        "action": "updated"
+      },
+      {
+        "id": "R403",
+        "action": "updated"
+      },
+      {
+        "id": "R436",
+        "action": "updated"
+      },
+      {
+        "id": "R443",
+        "action": "repeated"
+      },
+      {
+        "id": "R480",
+        "action": "repeated"
+      },
+      {
+        "id": "R485",
+        "action": "updated"
+      },
+      {
+        "id": "R520",
+        "action": "updated"
+      },
+      {
+        "id": "R569",
+        "action": "updated"
+      },
+      {
+        "id": "R572",
+        "action": "repeated"
+      },
+      {
+        "id": "R603",
+        "action": "repeated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-B",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "SHORE-2",
+            "report": "R572",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R603",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R520",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241217ZOCT26",
+            "report": "R603",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241216ZOCT26",
+            "report": "R520",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241215ZOCT26",
+            "report": "R485",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "SURFACE",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "45.0915",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "45.0905",
+            "report": "R572",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "45.0911",
+            "report": "R603",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.0891",
+            "report": "R520",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.2344",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.2343",
+            "report": "R572",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "-63.2339",
+            "report": "R603",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.2219",
+            "report": "R520",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "NEUTRAL",
+        "from_report": "R385",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "UNKNOWN",
+            "report": "R375",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "280",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "287",
+            "report": "R572",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "283",
+            "report": "R603",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "276",
+            "report": "R485",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "15.4",
+        "from_report": "R569",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "16.2",
+            "report": "R572",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "16.6",
+            "report": "R603",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "17.0",
+            "report": "R485",
+            "source": "SHORE-2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E3",
+    "type": "LOGSTAT",
+    "confidence": 0.93,
+    "sources": [
+      "S-A-COY"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R3",
+        "action": "created"
+      },
+      {
+        "id": "R286",
+        "action": "updated"
+      },
+      {
+        "id": "R630",
+        "action": "updated"
+      },
+      {
+        "id": "R687",
+        "action": "updated"
+      },
+      {
+        "id": "R714",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R720",
+        "action": "updated"
+      },
+      {
+        "id": "R729",
+        "action": "updated"
+      },
+      {
+        "id": "R744",
+        "action": "updated"
+      }
+    ],
+    "fields": {
+      "UNIT": {
+        "value": "A-COY",
+        "from_report": "R744",
+        "source": "S-A-COY",
+        "status": "ok",
+        "alternatives": []
+      },
+      "DTG": {
+        "value": "241300ZOCT26",
+        "from_report": "R744",
+        "source": "S-A-COY",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241250ZOCT26",
+            "report": "R729",
+            "source": "S-A-COY"
+          },
+          {
+            "value": "241240ZOCT26",
+            "report": "R720",
+            "source": "S-A-COY"
+          },
+          {
+            "value": "241230ZOCT26",
+            "report": "R687",
+            "source": "S-A-COY"
+          }
+        ]
+      },
+      "SUPPLY_CLASS": {
+        "value": "I",
+        "from_report": "R744",
+        "source": "S-A-COY",
+        "status": "ok",
+        "alternatives": []
+      },
+      "ITEM": {
+        "value": "WATER",
+        "from_report": "R744",
+        "source": "S-A-COY",
+        "status": "ok",
+        "alternatives": []
+      },
+      "ONHAND": {
+        "value": "1783",
+        "from_report": "R744",
+        "source": "S-A-COY",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "1865",
+            "report": "R729",
+            "source": "S-A-COY"
+          },
+          {
+            "value": "2130",
+            "report": "R720",
+            "source": "S-A-COY"
+          },
+          {
+            "value": "2283",
+            "report": "R687",
+            "source": "S-A-COY"
+          }
+        ]
+      },
+      "STATUS": {
+        "value": "GREEN",
+        "from_report": "R744",
+        "source": "S-A-COY",
+        "status": "ok",
+        "alternatives": []
+      }
+    }
+  },
+  {
+    "id": "E4",
+    "type": "CONTACT",
+    "confidence": 0.999,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R4",
+        "action": "created"
+      },
+      {
+        "id": "R6",
+        "action": "corroborated"
+      },
+      {
+        "id": "R87",
+        "action": "updated"
+      },
+      {
+        "id": "R111",
+        "action": "updated"
+      },
+      {
+        "id": "R132",
+        "action": "repeated"
+      },
+      {
+        "id": "R142",
+        "action": "updated"
+      },
+      {
+        "id": "R152",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R219",
+        "action": "updated"
+      },
+      {
+        "id": "R258",
+        "action": "repeated"
+      },
+      {
+        "id": "R302",
+        "action": "repeated"
+      },
+      {
+        "id": "R345",
+        "action": "updated"
+      },
+      {
+        "id": "R390",
+        "action": "updated"
+      },
+      {
+        "id": "R402",
+        "action": "repeated"
+      },
+      {
+        "id": "R410",
+        "action": "updated"
+      },
+      {
+        "id": "R419",
+        "action": "updated"
+      },
+      {
+        "id": "R478",
+        "action": "updated"
+      },
+      {
+        "id": "R501",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R516",
+        "action": "updated"
+      },
+      {
+        "id": "R531",
+        "action": "updated"
+      },
+      {
+        "id": "R545",
+        "action": "updated"
+      },
+      {
+        "id": "R548",
+        "action": "repeated"
+      },
+      {
+        "id": "R551",
+        "action": "repeated"
+      },
+      {
+        "id": "R600",
+        "action": "updated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-A",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "SHORE-2",
+            "report": "R545",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "HMCS-B",
+            "report": "R551",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "SHORE-2",
+            "report": "R516",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241217ZOCT26",
+            "report": "R545",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "241217ZOCT26",
+            "report": "R551",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "241216ZOCT26",
+            "report": "R516",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "AIR",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "44.4952",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "44.4962",
+            "report": "R545",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "44.4984",
+            "report": "R551",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "44.5389",
+            "report": "R516",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.5394",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.5338",
+            "report": "R545",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "-63.5342",
+            "report": "R551",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "-63.4956",
+            "report": "R516",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "HOSTILE",
+        "from_report": "R390",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "UNKNOWN",
+            "report": "R258",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "FRIEND",
+            "report": "R132",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "215",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "219",
+            "report": "R545",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "213",
+            "report": "R551",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "214",
+            "report": "R516",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "101.1",
+        "from_report": "R600",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "100.7",
+            "report": "R551",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "99.3",
+            "report": "R516",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "101.7",
+            "report": "R531",
+            "source": "HMCS-A"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E5",
+    "type": "CONTACT",
+    "confidence": 0.999,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R5",
+        "action": "created"
+      },
+      {
+        "id": "R14",
+        "action": "updated"
+      },
+      {
+        "id": "R22",
+        "action": "corroborated"
+      },
+      {
+        "id": "R40",
+        "action": "updated"
+      },
+      {
+        "id": "R51",
+        "action": "updated"
+      },
+      {
+        "id": "R73",
+        "action": "repeated"
+      },
+      {
+        "id": "R77",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R99",
+        "action": "updated"
+      },
+      {
+        "id": "R141",
+        "action": "updated"
+      },
+      {
+        "id": "R179",
+        "action": "updated"
+      },
+      {
+        "id": "R202",
+        "action": "updated"
+      },
+      {
+        "id": "R231",
+        "action": "repeated"
+      },
+      {
+        "id": "R256",
+        "action": "updated"
+      },
+      {
+        "id": "R288",
+        "action": "updated"
+      },
+      {
+        "id": "R306",
+        "action": "repeated"
+      },
+      {
+        "id": "R340",
+        "action": "updated"
+      },
+      {
+        "id": "R363",
+        "action": "repeated"
+      },
+      {
+        "id": "R420",
+        "action": "updated"
+      },
+      {
+        "id": "R457",
+        "action": "repeated"
+      },
+      {
+        "id": "R461",
+        "action": "updated"
+      },
+      {
+        "id": "R486",
+        "action": "updated"
+      },
+      {
+        "id": "R615",
+        "action": "updated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-A",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "SHORE-2",
+            "report": "R420",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "HMCS-B",
+            "report": "R340",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "SHORE-2",
+            "report": "R363",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241216ZOCT26",
+            "report": "R486",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241214ZOCT26",
+            "report": "R461",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241212ZOCT26",
+            "report": "R420",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "SURFACE",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "45.1317",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "45.1185",
+            "report": "R486",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.1077",
+            "report": "R461",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.0954",
+            "report": "R420",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.0981",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.1019",
+            "report": "R486",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.1026",
+            "report": "R461",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.1028",
+            "report": "R420",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "FRIEND",
+        "from_report": "R256",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": []
+      },
+      "COURSE": {
+        "value": "356",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "9",
+            "report": "R486",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "0",
+            "report": "R461",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "5",
+            "report": "R420",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "20.7",
+        "from_report": "R615",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "20.8",
+            "report": "R486",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "21.4",
+            "report": "R461",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "22.1",
+            "report": "R420",
+            "source": "SHORE-2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E6",
+    "type": "LOGSTAT",
+    "confidence": 0.92,
+    "sources": [
+      "S-3PL"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R7",
+        "action": "created"
+      },
+      {
+        "id": "R362",
+        "action": "updated"
+      },
+      {
+        "id": "R635",
+        "action": "updated"
+      },
+      {
+        "id": "R712",
+        "action": "updated"
+      },
+      {
+        "id": "R722",
+        "action": "updated"
+      },
+      {
+        "id": "R734",
+        "action": "updated"
+      },
+      {
+        "id": "R743",
+        "action": "updated"
+      }
+    ],
+    "fields": {
+      "UNIT": {
+        "value": "3PL",
+        "from_report": "R743",
+        "source": "S-3PL",
+        "status": "ok",
+        "alternatives": []
+      },
+      "DTG": {
+        "value": "241300ZOCT26",
+        "from_report": "R743",
+        "source": "S-3PL",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241250ZOCT26",
+            "report": "R734",
+            "source": "S-3PL"
+          },
+          {
+            "value": "241240ZOCT26",
+            "report": "R722",
+            "source": "S-3PL"
+          },
+          {
+            "value": "241230ZOCT26",
+            "report": "R712",
+            "source": "S-3PL"
+          }
+        ]
+      },
+      "SUPPLY_CLASS": {
+        "value": "I",
+        "from_report": "R743",
+        "source": "S-3PL",
+        "status": "ok",
+        "alternatives": []
+      },
+      "ITEM": {
+        "value": "RATIONS",
+        "from_report": "R743",
+        "source": "S-3PL",
+        "status": "ok",
+        "alternatives": []
+      },
+      "ONHAND": {
+        "value": "2814",
+        "from_report": "R743",
+        "source": "S-3PL",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "3189",
+            "report": "R734",
+            "source": "S-3PL"
+          },
+          {
+            "value": "3369",
+            "report": "R722",
+            "source": "S-3PL"
+          },
+          {
+            "value": "3482",
+            "report": "R712",
+            "source": "S-3PL"
+          }
+        ]
+      },
+      "STATUS": {
+        "value": "GREEN",
+        "from_report": "R743",
+        "source": "S-3PL",
+        "status": "ok",
+        "alternatives": []
+      }
+    }
+  },
+  {
+    "id": "E7",
+    "type": "CONTACT",
+    "confidence": 1.0,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R8",
+        "action": "created"
+      },
+      {
+        "id": "R10",
+        "action": "updated"
+      },
+      {
+        "id": "R29",
+        "action": "updated"
+      },
+      {
+        "id": "R38",
+        "action": "repeated"
+      },
+      {
+        "id": "R55",
+        "action": "updated"
+      },
+      {
+        "id": "R127",
+        "action": "updated"
+      },
+      {
+        "id": "R145",
+        "action": "repeated"
+      },
+      {
+        "id": "R166",
+        "action": "updated"
+      },
+      {
+        "id": "R182",
+        "action": "updated"
+      },
+      {
+        "id": "R183",
+        "action": "repeated"
+      },
+      {
+        "id": "R197",
+        "action": "repeated"
+      },
+      {
+        "id": "R253",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R259",
+        "action": "updated"
+      },
+      {
+        "id": "R260",
+        "action": "repeated"
+      },
+      {
+        "id": "R266",
+        "action": "repeated"
+      },
+      {
+        "id": "R313",
+        "action": "updated"
+      },
+      {
+        "id": "R320",
+        "action": "repeated"
+      },
+      {
+        "id": "R354",
+        "action": "updated"
+      },
+      {
+        "id": "R364",
+        "action": "updated"
+      },
+      {
+        "id": "R510",
+        "action": "updated"
+      },
+      {
+        "id": "R523",
+        "action": "updated"
+      },
+      {
+        "id": "R578",
+        "action": "repeated"
+      },
+      {
+        "id": "R586",
+        "action": "updated"
+      },
+      {
+        "id": "R611",
+        "action": "repeated"
+      },
+      {
+        "id": "R638",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R676",
+        "action": "repeated"
+      },
+      {
+        "id": "R698",
+        "action": "duplicate_ignored"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-A",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "SHORE-2",
+            "report": "R611",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "HMCS-B",
+            "report": "R578",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "SHORE-2",
+            "report": "R676",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241216ZOCT26",
+            "report": "R510",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241215ZOCT26",
+            "report": "R578",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "241214ZOCT26",
+            "report": "R676",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "SUBSURFACE",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "45.0819",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "45.0821",
+            "report": "R611",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "45.0801",
+            "report": "R510",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.0791",
+            "report": "R578",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.0731",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.0715",
+            "report": "R611",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "-63.0810",
+            "report": "R510",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.0822",
+            "report": "R578",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "NEUTRAL",
+        "from_report": "R313",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "FRIEND",
+            "report": "R38",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "UNKNOWN",
+            "report": "R676",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "HOSTILE",
+            "report": "R354",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "69",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "63",
+            "report": "R611",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "67",
+            "report": "R676",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "70",
+            "report": "R523",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "10.7",
+        "from_report": "R586",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "12.1",
+            "report": "R611",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "10.5",
+            "report": "R676",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "10.9",
+            "report": "R523",
+            "source": "HMCS-B"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E8",
+    "type": "CONTACT",
+    "confidence": 1.0,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R9",
+        "action": "created"
+      },
+      {
+        "id": "R71",
+        "action": "conflict"
+      },
+      {
+        "id": "R74",
+        "action": "updated"
+      },
+      {
+        "id": "R85",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R89",
+        "action": "conflict"
+      },
+      {
+        "id": "R97",
+        "action": "updated"
+      },
+      {
+        "id": "R100",
+        "action": "updated"
+      },
+      {
+        "id": "R109",
+        "action": "updated"
+      },
+      {
+        "id": "R187",
+        "action": "updated"
+      },
+      {
+        "id": "R188",
+        "action": "updated"
+      },
+      {
+        "id": "R250",
+        "action": "updated"
+      },
+      {
+        "id": "R265",
+        "action": "repeated"
+      },
+      {
+        "id": "R276",
+        "action": "updated"
+      },
+      {
+        "id": "R282",
+        "action": "updated"
+      },
+      {
+        "id": "R323",
+        "action": "updated"
+      },
+      {
+        "id": "R384",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R407",
+        "action": "updated"
+      },
+      {
+        "id": "R432",
+        "action": "updated"
+      },
+      {
+        "id": "R474",
+        "action": "updated"
+      },
+      {
+        "id": "R542",
+        "action": "updated"
+      },
+      {
+        "id": "R558",
+        "action": "repeated"
+      },
+      {
+        "id": "R565",
+        "action": "repeated"
+      },
+      {
+        "id": "R626",
+        "action": "updated"
+      },
+      {
+        "id": "R688",
+        "action": "repeated"
+      },
+      {
+        "id": "R700",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R701",
+        "action": "repeated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-A",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "SHORE-2",
+            "report": "R542",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "HMCS-B",
+            "report": "R558",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "HMCS-B",
+            "report": "R565",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241217ZOCT26",
+            "report": "R542",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "241217ZOCT26",
+            "report": "R558",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "241216ZOCT26",
+            "report": "R565",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "AIR",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "44.7886",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "44.7924",
+            "report": "R542",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "44.7913",
+            "report": "R558",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "44.8079",
+            "report": "R565",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-62.5151",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-62.5300",
+            "report": "R542",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "-62.5262",
+            "report": "R558",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "-62.5681",
+            "report": "R565",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "NEUTRAL",
+        "from_report": "R542",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "FRIEND",
+            "report": "R74",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "UNKNOWN",
+            "report": "R187",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "119",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "113",
+            "report": "R542",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "112",
+            "report": "R558",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "116",
+            "report": "R565",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "80.2",
+        "from_report": "R626",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "79.6",
+            "report": "R542",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "79.5",
+            "report": "R558",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "78.8",
+            "report": "R565",
+            "source": "HMCS-B"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E9",
+    "type": "CONTACT",
+    "confidence": 1.0,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R11",
+        "action": "created"
+      },
+      {
+        "id": "R83",
+        "action": "updated"
+      },
+      {
+        "id": "R133",
+        "action": "updated"
+      },
+      {
+        "id": "R195",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R204",
+        "action": "updated"
+      },
+      {
+        "id": "R222",
+        "action": "updated"
+      },
+      {
+        "id": "R223",
+        "action": "updated"
+      },
+      {
+        "id": "R257",
+        "action": "updated"
+      },
+      {
+        "id": "R295",
+        "action": "updated"
+      },
+      {
+        "id": "R339",
+        "action": "repeated"
+      },
+      {
+        "id": "R350",
+        "action": "updated"
+      },
+      {
+        "id": "R356",
+        "action": "updated"
+      },
+      {
+        "id": "R447",
+        "action": "updated"
+      },
+      {
+        "id": "R449",
+        "action": "updated"
+      },
+      {
+        "id": "R484",
+        "action": "updated"
+      },
+      {
+        "id": "R517",
+        "action": "updated"
+      },
+      {
+        "id": "R547",
+        "action": "updated"
+      },
+      {
+        "id": "R561",
+        "action": "updated"
+      },
+      {
+        "id": "R587",
+        "action": "updated"
+      },
+      {
+        "id": "R629",
+        "action": "repeated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "SHORE-2",
+        "from_report": "R561",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "HMCS-B",
+            "report": "R547",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R587",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R629",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R561",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241217ZOCT26",
+            "report": "R547",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "241217ZOCT26",
+            "report": "R587",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241216ZOCT26",
+            "report": "R629",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "AIR",
+        "from_report": "R561",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "44.6594",
+        "from_report": "R561",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "44.6609",
+            "report": "R547",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "44.6630",
+            "report": "R587",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "44.6825",
+            "report": "R629",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.4101",
+        "from_report": "R561",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.4055",
+            "report": "R547",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "-63.4082",
+            "report": "R587",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.3655",
+            "report": "R629",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "NEUTRAL",
+        "from_report": "R449",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "UNKNOWN",
+            "report": "R295",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "227",
+        "from_report": "R587",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "237",
+            "report": "R547",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "235",
+            "report": "R629",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "231",
+            "report": "R484",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "71.1",
+        "from_report": "R587",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "72.7",
+            "report": "R547",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "72.1",
+            "report": "R629",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "71.9",
+            "report": "R484",
+            "source": "SHORE-2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E10",
+    "type": "CONTACT",
+    "confidence": 0.999,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R12",
+        "action": "created"
+      },
+      {
+        "id": "R21",
+        "action": "updated"
+      },
+      {
+        "id": "R57",
+        "action": "updated"
+      },
+      {
+        "id": "R60",
+        "action": "updated"
+      },
+      {
+        "id": "R86",
+        "action": "updated"
+      },
+      {
+        "id": "R110",
+        "action": "repeated"
+      },
+      {
+        "id": "R112",
+        "action": "updated"
+      },
+      {
+        "id": "R123",
+        "action": "repeated"
+      },
+      {
+        "id": "R161",
+        "action": "repeated"
+      },
+      {
+        "id": "R184",
+        "action": "duplicate_ignored"
+      },
+      {
+        "id": "R191",
+        "action": "updated"
+      },
+      {
+        "id": "R192",
+        "action": "repeated"
+      },
+      {
+        "id": "R206",
+        "action": "repeated"
+      },
+      {
+        "id": "R247",
+        "action": "updated"
+      },
+      {
+        "id": "R278",
+        "action": "updated"
+      },
+      {
+        "id": "R296",
+        "action": "updated"
+      },
+      {
+        "id": "R309",
+        "action": "updated"
+      },
+      {
+        "id": "R321",
+        "action": "repeated"
+      },
+      {
+        "id": "R367",
+        "action": "updated"
+      },
+      {
+        "id": "R423",
+        "action": "updated"
+      },
+      {
+        "id": "R454",
+        "action": "repeated"
+      },
+      {
+        "id": "R483",
+        "action": "repeated"
+      },
+      {
+        "id": "R553",
+        "action": "updated"
+      },
+      {
+        "id": "R637",
+        "action": "repeated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-B",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "HMCS-A",
+            "report": "R637",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R423",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "SHORE-2",
+            "report": "R454",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241217ZOCT26",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241213ZOCT26",
+            "report": "R423",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241213ZOCT26",
+            "report": "R483",
+            "source": "HMCS-B"
+          },
+          {
+            "value": "241212ZOCT26",
+            "report": "R454",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "SUBSURFACE",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "44.9445",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "44.9433",
+            "report": "R637",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "44.9426",
+            "report": "R423",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "44.9439",
+            "report": "R483",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.0960",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.0946",
+            "report": "R637",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.0798",
+            "report": "R423",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.0813",
+            "report": "R483",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "FRIEND",
+        "from_report": "R278",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "UNKNOWN",
+            "report": "R112",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "279",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "272",
+            "report": "R423",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "272",
+            "report": "R454",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "277",
+            "report": "R367",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "9.8",
+        "from_report": "R553",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "8.6",
+            "report": "R423",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "9.5",
+            "report": "R454",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "7.3",
+            "report": "R367",
+            "source": "HMCS-A"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E11",
+    "type": "CONTACT",
+    "confidence": 0.982,
+    "sources": [
+      "HMCS-A",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R13",
+        "action": "created"
+      },
+      {
+        "id": "R46",
+        "action": "conflict"
+      },
+      {
+        "id": "R244",
+        "action": "updated"
+      },
+      {
+        "id": "R536",
+        "action": "repeated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "HMCS-A",
+        "from_report": "R244",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "SHORE-2",
+            "report": "R536",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "SHORE-2",
+            "report": "R13",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241208ZOCT26",
+        "from_report": "R244",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241200ZOCT26",
+            "report": "R46",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241200ZOCT26",
+            "report": "R536",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "241159ZOCT26",
+            "report": "R13",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "AIR",
+        "from_report": "R244",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "45.1325",
+        "from_report": "R244",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "45.0935",
+            "report": "R46",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.1352",
+            "report": "R536",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "45.0928",
+            "report": "R13",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.0056",
+        "from_report": "R244",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-62.9190",
+            "report": "R46",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-62.9028",
+            "report": "R536",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "-62.9377",
+            "report": "R13",
+            "source": "SHORE-2"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "HOSTILE",
+        "from_report": "R46",
+        "source": "HMCS-A",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "FRIEND",
+            "report": "R13",
+            "source": "SHORE-2"
+          },
+          {
+            "value": "UNKNOWN",
+            "report": "R244",
+            "source": "HMCS-A"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "E12",
+    "type": "CONTACT",
+    "confidence": 0.999,
+    "sources": [
+      "HMCS-A",
+      "HMCS-B",
+      "SHORE-2"
+    ],
+    "flags": [],
+    "reports": [
+      {
+        "id": "R15",
+        "action": "created"
+      },
+      {
+        "id": "R50",
+        "action": "updated"
+      },
+      {
+        "id": "R58",
+        "action": "updated"
+      },
+      {
+        "id": "R106",
+        "action": "updated"
+      },
+      {
+        "id": "R118",
+        "action": "updated"
+      },
+      {
+        "id": "R120",
+        "action": "corroborated"
+      },
+      {
+        "id": "R160",
+        "action": "updated"
+      },
+      {
+        "id": "R194",
+        "action": "updated"
+      },
+      {
+        "id": "R245",
+        "action": "updated"
+      },
+      {
+        "id": "R271",
+        "action": "updated"
+      },
+      {
+        "id": "R285",
+        "action": "updated"
+      },
+      {
+        "id": "R413",
+        "action": "updated"
+      },
+      {
+        "id": "R422",
+        "action": "updated"
+      },
+      {
+        "id": "R428",
+        "action": "repeated"
+      },
+      {
+        "id": "R496",
+        "action": "updated"
+      },
+      {
+        "id": "R604",
+        "action": "updated"
+      },
+      {
+        "id": "R627",
+        "action": "updated"
+      }
+    ],
+    "fields": {
+      "REPORTER": {
+        "value": "SHORE-2",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "HMCS-A",
+            "report": "R604",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "HMCS-A",
+            "report": "R496",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "HMCS-B",
+            "report": "R422",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "DTG": {
+        "value": "241218ZOCT26",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "241217ZOCT26",
+            "report": "R604",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241215ZOCT26",
+            "report": "R496",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "241214ZOCT26",
+            "report": "R422",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "DOMAIN": {
+        "value": "AIR",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": []
+      },
+      "LAT": {
+        "value": "45.5089",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "45.5004",
+            "report": "R604",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.4584",
+            "report": "R496",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "45.4237",
+            "report": "R422",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "LON": {
+        "value": "-63.4923",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "-63.4782",
+            "report": "R604",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.4116",
+            "report": "R496",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "-63.3549",
+            "report": "R422",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "CLASS": {
+        "value": "HOSTILE",
+        "from_report": "R50",
+        "source": "HMCS-B",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "UNKNOWN",
+            "report": "R271",
+            "source": "HMCS-A"
+          }
+        ]
+      },
+      "COURSE": {
+        "value": "318",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "315",
+            "report": "R604",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "313",
+            "report": "R496",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "310",
+            "report": "R422",
+            "source": "HMCS-B"
+          }
+        ]
+      },
+      "SPEED": {
+        "value": "113.4",
+        "from_report": "R627",
+        "source": "SHORE-2",
+        "status": "ok",
+        "alternatives": [
+          {
+            "value": "109.9",
+            "report": "R604",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "111.8",
+            "report": "R496",
+            "source": "HMCS-A"
+          },
+          {
+            "value": "113.2",
+            "report": "R422",
+            "source": "HMCS-B"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "seed": 42,
+  "messages": 400,
+  "catalogue": {
+    "name": "synthetic-demo",
+    "version": "0.2.0",
+    "families": [
+      "CFF",
+      "CONTACT",
+      "LOGSTAT",
+      "MEDEVAC"
+    ]
+  },
+  "fidelity": {
+    "total": 400,
+    "char_parse_ok": 400,
+    "xml_xsd_valid": 400,
+    "char_to_xml_to_char_identical": 400,
+    "binary_round_trip_ok": 400
+  },
+  "sizes": {
+    "CFF": {
+      "count": 100,
+      "char_bytes": 13377,
+      "xml_bytes": 22698,
+      "xml_zlib_bytes": 18866,
+      "binary_bytes": 6061,
+      "binary_vs_xml_pct": 26.7,
+      "binary_vs_char_pct": 45.31,
+      "xml_zlib_vs_xml_pct": 83.12
+    },
+    "CONTACT": {
+      "count": 100,
+      "char_bytes": 15291,
+      "xml_bytes": 26045,
+      "xml_zlib_bytes": 20965,
+      "binary_bytes": 6268,
+      "binary_vs_xml_pct": 24.07,
+      "binary_vs_char_pct": 40.99,
+      "xml_zlib_vs_xml_pct": 80.5
+    },
+    "LOGSTAT": {
+      "count": 100,
+      "char_bytes": 14671,
+      "xml_bytes": 25854,
+      "xml_zlib_bytes": 20907,
+      "binary_bytes": 6249,
+      "binary_vs_xml_pct": 24.17,
+      "binary_vs_char_pct": 42.59,
+      "xml_zlib_vs_xml_pct": 80.87
+    },
+    "MEDEVAC": {
+      "count": 100,
+      "char_bytes": 17800,
+      "xml_bytes": 30533,
+      "xml_zlib_bytes": 23123,
+      "binary_bytes": 5969,
+      "binary_vs_xml_pct": 19.55,
+      "binary_vs_char_pct": 33.53,
+      "xml_zlib_vs_xml_pct": 75.73
+    },
+    "ALL": {
+      "count": 400,
+      "char_bytes": 61139,
+      "xml_bytes": 105130,
+      "xml_zlib_bytes": 83861,
+      "binary_bytes": 24547,
+      "binary_vs_xml_pct": 23.35,
+      "binary_vs_char_pct": 40.15,
+      "xml_zlib_vs_xml_pct": 79.77
+    }
+  },
+  "char_noise": {
+    "truncate": {
+      "flagged": 400
+    },
+    "drop_terminator": {
+      "flagged": 400
+    },
+    "substitute": {
+      "flagged": 279,
+      "silent_change": 121
+    },
+    "extra_whitespace": {
+      "recovered_identical": 400
+    },
+    "shuffle_fields": {
+      "recovered_identical": 400
+    },
+    "drop_segment": {
+      "flagged": 267,
+      "silent_change": 133
+    },
+    "duplicate_segment": {
+      "flagged": 400
+    }
+  },
+  "binary_bit_flip": {
+    "detected": 3967,
+    "undetected_identical": 33
+  }
+}

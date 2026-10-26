@@ -1,0 +1,173 @@
+{
+  "name": "synthetic-demo",
+  "version": "0.2.0",
+  "namespace": "urn:poc:synthetic-msg:1",
+  "messages": [
+    {
+      "id": "CFF",
+      "code": 1,
+      "title": "Call for fire",
+      "domain": "land",
+      "service": "fires",
+      "fusion": {"spatial": {"grid": "TGTGRID"}, "radius_m": 150, "time_window_s": 3600, "vote_fields": ["TGT"]},
+      "keywords": ["call for fire", "fire mission", "cff", "request fire", "requesting fire", "adjust fire", "fire for effect", "ffe", "observer", "target", "demande de tir", "mission de tir", "tir", "observateur", "cible"],
+      "fields": [
+        {"name": "OBS", "type": "token", "required": true, "max_len": 12, "pattern": "[A-Z0-9]{2,12}", "cues": ["observer", "obs", "observateur", "callsign", "this is", "ici"], "examples": ["B22", "ALPHA6", "OP3", "C14B", "HAWK2"]},
+        {"name": "DTG", "type": "dtg", "required": true},
+        {"name": "OBSGRID", "type": "mgrs", "cues": ["observer at", "observer grid", "obs grid", "my position", "my pos", "from grid", "observateur a", "ma position", "position observateur"]},
+        {"name": "TGTGRID", "type": "mgrs", "required": true, "cues": ["target grid", "tgt grid", "target location", "target", "tgt", "objectif", "cible", "on grid", "at grid", "grid"]},
+        {"name": "DIR", "type": "int", "min": 0, "max": 6399, "cues": ["direction", "dir", "azimuth", "az", "bearing", "relevement", "azimut"], "units": ["mils", "mil"]},
+        {"name": "TGT", "type": "enum", "required": true, "values": ["INF", "ARM", "VEH", "MORTAR", "ARTY", "BLDG", "OTHER"], "synonyms": {
+          "INF": ["infantry", "troops", "dismounted", "soldiers", "enemy platoon", "infanterie", "fantassins", "troupes", "infanterie debarquee"],
+          "ARM": ["tank", "tanks", "armour", "armor", "armoured", "armored", "char", "chars", "blinde", "blindes"],
+          "VEH": ["vehicle", "vehicles", "truck", "trucks", "convoy", "technical", "technicals", "vehicule", "vehicules", "camion", "camions"],
+          "MORTAR": ["mortar", "mortars", "mortier", "mortiers"],
+          "ARTY": ["artillery", "howitzer", "howitzers", "guns", "artillerie", "obusier", "obusiers"],
+          "BLDG": ["building", "house", "compound", "batiment", "maison", "immeuble"],
+          "OTHER": ["other", "autre"]
+        }},
+        {"name": "QTY", "type": "int", "min": 1, "max": 999, "cues": ["qty", "quantity", "approx", "about", "approximately", "environ", "quantite"], "units": ["x", "pax", "men", "personnel", "soldiers", "troops", "tanks", "vehicles", "trucks", "mortars", "guns", "hommes", "vehicules", "soldats", "chars", "fantassins"]},
+        {"name": "MISSION", "type": "enum", "required": true, "values": ["ADJUST", "FFE", "SMOKE", "ILLUM"], "synonyms": {
+          "ADJUST": ["adjust", "adjust fire", "adjustment", "registration", "ajuster", "reglage", "ajustement"],
+          "FFE": ["fire for effect", "ffe", "engage", "destroy", "neutralize", "neutralise", "tir d'efficacite", "efficacite", "detruire"],
+          "SMOKE": ["smoke", "fumigene", "fumee"],
+          "ILLUM": ["illum", "illumination", "illuminating", "flare", "eclairant"]
+        }},
+        {"name": "DESC", "type": "text", "max_len": 120, "examples": [
+          "Dismounted infantry in the open, moving east",
+          "Infanterie débarquée à découvert, déplacement vers l'est",
+          "Two vehicles at 3/4 strength = suspected mortar team",
+          "Tree line north of road, muzzle flash observed",
+          "Bâtiment à deux étages, tireur embusqué au 2e étage"
+        ]}
+      ]
+    },
+    {
+      "id": "MEDEVAC",
+      "code": 2,
+      "title": "Medical evacuation request",
+      "domain": "land",
+      "service": "medical",
+      "fusion": {"id_any": ["REQID"], "spatial": {"grid": "PICKUP"}, "radius_m": 200, "time_window_s": 7200, "vote_fields": ["SECURITY"]},
+      "keywords": ["medevac", "casevac", "9-line", "nine line", "casualty", "casualties", "litter", "wounded", "evacuation", "urgent surgical", "pickup", "lz", "blesse", "blesses", "evacuation medicale", "evacuation sanitaire", "evasan", "zone d'atterrissage"],
+      "fields": [
+        {"name": "REQID", "type": "token", "required": true, "max_len": 16, "cues": ["request", "req", "req id", "medevac id", "id", "demande", "no."], "examples": ["MV-001", "MV-014", "EVAC7", "M9L-22"]},
+        {"name": "DTG", "type": "dtg", "required": true},
+        {"name": "PICKUP", "type": "mgrs", "required": true, "cues": ["pickup site", "pickup", "pick-up", "pick up", "landing zone", "lz", "extraction", "zone de ramassage", "zone d'atterrissage", "site"]},
+        {"name": "FREQ", "type": "decimal", "required": true, "min": 30, "max": 512, "scale": 3, "cues": ["freq", "frequency", "frequence", "net", "radio"], "units": ["mhz"]},
+        {"name": "PRECEDENCE", "type": "enum", "required": true, "values": ["URGENT", "URGENT_SURG", "PRIORITY", "ROUTINE", "CONVENIENCE"], "cues": ["precedence", "priority level", "category", "categorie"], "synonyms": {
+          "URGENT": ["urgent", "urgente"],
+          "URGENT_SURG": ["urgent surgical", "urgent-surgical", "urgent surg", "chirurgical urgent", "urgent chirurgical", "urgence chirurgicale"],
+          "PRIORITY": ["priority", "priorite"],
+          "ROUTINE": ["routine"],
+          "CONVENIENCE": ["convenience", "commodite"]
+        }},
+        {"name": "URGENT_PAT", "type": "int", "min": 0, "max": 99, "units": ["urgent", "urgents", "urgent patients", "urgent casualties"]},
+        {"name": "ROUTINE_PAT", "type": "int", "min": 0, "max": 99, "units": ["routine", "ambulatory", "walking wounded", "walking", "routine patients", "ambulatoires"]},
+        {"name": "SECURITY", "type": "enum", "required": true, "values": ["NO_ENEMY", "POSSIBLE_ENEMY", "ENEMY", "ARMED_ESCORT"], "synonyms": {
+          "NO_ENEMY": ["no enemy", "pas d'ennemi", "no hostile", "area secure", "site secure", "secure", "zone sure", "aucun ennemi"],
+          "POSSIBLE_ENEMY": ["possible enemy", "suspected enemy", "enemy possible", "ennemi possible", "suspected hostile", "ennemi suspecte"],
+          "ENEMY": ["enemy in area", "enemy present", "enemy troops", "hostile", "taking fire", "under fire", "sous le feu", "ennemi present", "ennemi"],
+          "ARMED_ESCORT": ["armed escort", "escort required", "escort", "escorte armee", "escorte"]
+        }},
+        {"name": "MARKING", "type": "enum", "values": ["PANELS", "PYRO", "SMOKE", "NONE", "OTHER"], "synonyms": {
+          "PANELS": ["panel", "panels", "vs-17", "panneau", "panneaux"],
+          "PYRO": ["pyro", "pyrotechnic", "pyrotechnics", "flares", "flare", "fusee", "fusees"],
+          "SMOKE": ["smoke", "fumigene", "fumee"],
+          "NONE": ["no marking", "unmarked", "not marked", "sans marquage", "aucun marquage"],
+          "OTHER": ["other marking", "strobe", "ir strobe", "mirror", "miroir", "stroboscope"]
+        }},
+        {"name": "CBRN", "type": "enum", "values": ["NONE", "NUCLEAR", "BIO", "CHEM"], "synonyms": {
+          "NONE": ["no cbrn", "no nbc", "no chemical", "aucun nrbc", "pas de nrbc"],
+          "NUCLEAR": ["nuclear", "radiological", "nucleaire", "radiologique"],
+          "BIO": ["biological", "bio", "biologique"],
+          "CHEM": ["chemical", "chem", "nerve agent", "chimique"]
+        }},
+        {"name": "DESC", "type": "text", "max_len": 120, "examples": [
+          "Two litter, one ambulatory, tourniquet applied",
+          "Deux blessés couchés, hémorragie contrôlée",
+          "Landing zone is 100m x 100m, slope to the west",
+          "Zone d'atterrissage dégagée, vent du nord"
+        ]}
+      ]
+    },
+    {
+      "id": "LOGSTAT",
+      "code": 3,
+      "title": "Logistics status",
+      "domain": "land",
+      "service": "logistics",
+      "fusion": {"identity": ["UNIT", "ITEM"], "supersede": true},
+      "keywords": ["logstat", "logistics status", "sustainment", "supply status", "resupply", "on hand", "stock", "days of supply", "dos", "fuel", "ammo", "rations", "water", "class iii", "class v", "etat logistique", "ravitaillement", "approvisionnement", "stocks"],
+      "fields": [
+        {"name": "UNIT", "type": "token", "required": true, "max_len": 16, "cues": ["unit", "from", "this is", "platoon", "sqn", "coy", "company", "unite", "peloton", "ici"], "examples": ["1PL", "2PL", "A-COY", "B-SQN", "CSS-3"]},
+        {"name": "DTG", "type": "dtg", "required": true},
+        {"name": "SUPPLY_CLASS", "type": "enum", "required": true, "values": ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"], "synonyms": {
+          "I": ["class i", "class 1", "cl 1", "classe i", "classe 1", "rations", "food", "water", "eau", "vivres"],
+          "II": ["class ii", "class 2", "classe ii", "classe 2", "clothing"],
+          "III": ["class iii", "class 3", "classe iii", "classe 3", "fuel", "diesel", "petrol", "pol", "carburant", "essence"],
+          "IV": ["class iv", "class 4", "classe iv", "classe 4", "construction"],
+          "V": ["class v", "class 5", "ammo", "ammunition", "munitions", "classe v", "classe 5"],
+          "VI": ["class vi", "class 6", "classe vi", "classe 6"],
+          "VII": ["class vii", "class 7", "classe vii", "classe 7"],
+          "VIII": ["class viii", "class 8", "medical supplies", "classe viii", "classe 8"],
+          "IX": ["class ix", "class 9", "spare parts", "repair parts", "classe ix", "classe 9", "pieces de rechange"],
+          "X": ["class x", "class 10", "classe x", "classe 10"]
+        }},
+        {"name": "ITEM", "type": "token", "required": true, "max_len": 24, "cues": ["item", "stock of", "stocks of", "article", "produit"], "examples": ["WATER", "RATIONS", "DIESEL", "5.56MM", "155MM_HE", "BATTERIES"]},
+        {"name": "ONHAND", "type": "int", "required": true, "min": 0, "max": 99999, "cues": ["on hand", "onhand", "oh", "have", "stock", "remaining", "restant", "en stock"], "units": ["on hand", "remaining", "restant", "restants", "en stock", "left"]},
+        {"name": "REQD", "type": "int", "min": 0, "max": 99999, "cues": ["required", "requested", "request", "need", "needed", "require", "besoin", "demande", "req"], "units": ["required", "requested", "needed", "requis", "demandes"]},
+        {"name": "DAYS", "type": "decimal", "min": 0, "max": 60, "scale": 1, "cues": ["dos", "days of supply", "jours de ravitaillement"], "units": ["days of supply", "days", "day", "dos", "jours", "jrs"]},
+        {"name": "STATUS", "type": "enum", "required": true, "values": ["GREEN", "AMBER", "RED", "BLACK"], "cues": ["status", "statut", "etat"], "synonyms": {
+          "GREEN": ["green", "vert"],
+          "AMBER": ["amber", "yellow", "orange", "ambre", "jaune"],
+          "RED": ["red", "rouge"],
+          "BLACK": ["black", "noir"]
+        }},
+        {"name": "LOC", "type": "mgrs", "cues": ["location", "loc", "position", "emplacement", "lieu", "at"]},
+        {"name": "DESC", "type": "text", "max_len": 120, "examples": [
+          "Resupply convoy delayed, bridge out",
+          "Convoi de ravitaillement retardé, pont détruit",
+          "Fuel = 40% / expect shortfall by 1800Z",
+          "Stock critique, réapprovisionnement demandé"
+        ]}
+      ]
+    },
+    {
+      "id": "CONTACT",
+      "code": 4,
+      "title": "Contact report (air, surface, subsurface)",
+      "domain": "maritime-air",
+      "service": "jisr",
+      "fusion": {"spatial": {"lat": "LAT", "lon": "LON"}, "radius_m": 500, "time_window_s": 600, "default_speed_mps": 40.0, "course_field": "COURSE", "speed_field": "SPEED", "must_match": ["DOMAIN"], "soft_match": ["CLASS"], "vote_fields": ["CLASS"]},
+      "keywords": ["contact", "track", "radar", "sonar", "visual", "vessel", "ship", "aircraft", "bogey", "submarine", "periscope", "sighting", "spotted", "detected", "contact report", "navire", "aeronef", "sous-marin", "repere", "lat", "lon"],
+      "fields": [
+        {"name": "REPORTER", "type": "token", "required": true, "max_len": 16, "cues": ["reporter", "reporting", "this is", "callsign", "ici", "from"], "examples": ["HMCS-A", "HMCS-B", "CP140-1", "CH148-3", "SHORE-2"]},
+        {"name": "DTG", "type": "dtg", "required": true},
+        {"name": "DOMAIN", "type": "enum", "required": true, "values": ["AIR", "SURFACE", "SUBSURFACE", "LAND"], "synonyms": {
+          "AIR": ["air", "aircraft", "aeroplane", "helicopter", "helo", "aeronef", "avion", "helicoptere", "bogey", "fixed wing"],
+          "SURFACE": ["surface", "vessel", "ship", "boat", "frigate", "destroyer", "navire", "bateau", "skiff"],
+          "SUBSURFACE": ["subsurface", "submarine", "periscope", "sonar contact", "sous-marin", "sous marin"],
+          "LAND": ["land", "ground", "terrestre"]
+        }},
+        {"name": "LAT", "type": "decimal", "required": true, "min": -90, "max": 90, "scale": 4, "cues": ["lat", "latitude"], "hemis": "NS"},
+        {"name": "LON", "type": "decimal", "required": true, "min": -180, "max": 180, "scale": 4, "cues": ["lon", "long", "longitude"], "hemis": "EW"},
+        {"name": "COURSE", "type": "int", "min": 0, "max": 359, "cues": ["course", "heading", "hdg", "cap", "route"], "units": ["degrees", "deg", "degres"]},
+        {"name": "SPEED", "type": "decimal", "min": 0, "max": 999.9, "scale": 1, "cues": ["speed", "vitesse"], "units": ["kts", "kt", "knots", "knts", "noeuds", "nœuds"]},
+        {"name": "CLASS", "type": "enum", "required": true, "values": ["FRIEND", "HOSTILE", "NEUTRAL", "UNKNOWN"], "synonyms": {
+          "FRIEND": ["friendly", "friend", "blue force", "own force", "ami", "allie", "amie"],
+          "HOSTILE": ["hostile", "enemy", "red force", "ennemi", "adversary"],
+          "NEUTRAL": ["neutral", "civilian", "merchant", "neutre", "civil", "commercial"],
+          "UNKNOWN": ["unknown", "unidentified", "unid", "inconnu", "inconnue", "non identifie", "non identifiee"]
+        }},
+        {"name": "COUNT", "type": "int", "min": 1, "max": 99, "cues": ["count", "qty", "number of"], "units": ["contacts", "contact", "aircraft", "vessels", "vessel", "ships", "ship", "boats", "boat", "bogeys", "bogey", "aeronefs", "navires", "x"]},
+        {"name": "DESC", "type": "text", "max_len": 120, "examples": [
+          "Fast surface contact closing from the northwest",
+          "Contact de surface rapide, approche par le nord-ouest",
+          "Radar track lost at 12/14 nm = possible masking",
+          "Aéronef sans transpondeur, altitude estimée 3000 pi"
+        ]}
+      ]
+    }
+  ]
+}

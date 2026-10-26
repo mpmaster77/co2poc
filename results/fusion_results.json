@@ -1,0 +1,163 @@
+{
+  "seeds": 20,
+  "families": {
+    "CONTACT": {
+      "reports": {
+        "mean": 547.75,
+        "min": 527,
+        "max": 574
+      },
+      "entities": {
+        "mean": 36.05,
+        "min": 30,
+        "max": 41
+      },
+      "truth_entities": {
+        "mean": 30.0,
+        "min": 30,
+        "max": 30
+      },
+      "pair_precision": {
+        "mean": 0.919,
+        "min": 0.833,
+        "max": 0.982
+      },
+      "pair_recall": {
+        "mean": 0.867,
+        "min": 0.799,
+        "max": 0.947
+      },
+      "class": {
+        "entities": 721,
+        "correct": 670,
+        "unknown": 14,
+        "wrong": 37,
+        "wrong_and_flagged": 5
+      }
+    },
+    "CFF": {
+      "reports": {
+        "mean": 101.2,
+        "min": 88,
+        "max": 134
+      },
+      "entities": {
+        "mean": 19.35,
+        "min": 18,
+        "max": 23
+      },
+      "truth_entities": {
+        "mean": 18.0,
+        "min": 18,
+        "max": 18
+      },
+      "pair_precision": {
+        "mean": 0.998,
+        "min": 0.982,
+        "max": 1.0
+      },
+      "pair_recall": {
+        "mean": 0.951,
+        "min": 0.813,
+        "max": 1.0
+      },
+      "target_type": {
+        "entities": 387,
+        "correct": 373,
+        "unknown": 0,
+        "wrong": 14,
+        "wrong_and_flagged": 13
+      }
+    },
+    "MEDEVAC": {
+      "reports": {
+        "mean": 27.2,
+        "min": 21,
+        "max": 31
+      },
+      "entities": {
+        "mean": 13.05,
+        "min": 11,
+        "max": 15
+      },
+      "truth_entities": {
+        "mean": 13.05,
+        "min": 11,
+        "max": 15
+      },
+      "pair_precision": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pair_recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "security": {
+        "entities": 200,
+        "correct": 174,
+        "unknown": 0,
+        "wrong": 26,
+        "wrong_and_flagged": 7
+      }
+    },
+    "LOGSTAT": {
+      "reports": {
+        "mean": 59.85,
+        "min": 56,
+        "max": 63
+      },
+      "entities": {
+        "mean": 8.0,
+        "min": 8,
+        "max": 8
+      },
+      "truth_entities": {
+        "mean": 8.0,
+        "min": 8,
+        "max": 8
+      },
+      "pair_precision": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pair_recall": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "latest_onhand": {
+        "entities": 160,
+        "correct": 160,
+        "unknown": 0,
+        "wrong": 0,
+        "wrong_and_flagged": 0
+      }
+    }
+  },
+  "raw_contact_report_class": {
+    "correct": 8420,
+    "unknown": 1876,
+    "wrong": 539
+  },
+  "relay_duplicates": {
+    "injected": 61,
+    "flagged_as_possible_duplicate": 61
+  },
+  "exact_duplicates": {
+    "injected": 1074,
+    "ignored": 1074
+  },
+  "actions": {
+    "created": 1529,
+    "corroborated": 333,
+    "updated": 8984,
+    "conflict": 395,
+    "repeated": 2405,
+    "duplicate_ignored": 1074
+  },
+  "provenance_ok_in_all_runs": true
+}

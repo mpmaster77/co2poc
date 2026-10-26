@@ -1,0 +1,451 @@
+{
+  "handwritten": {
+    "summary": {
+      "messages": 24,
+      "type_correct": 24,
+      "exact_messages": 22,
+      "precision": 0.994,
+      "recall": 0.989,
+      "flagged_for_review": 16,
+      "wrong_but_not_flagged": 0,
+      "fields_tp": 172,
+      "fields_fp": 1,
+      "fields_fn": 2
+    },
+    "by_language": {
+      "en": {
+        "messages": 19,
+        "type_correct": 19,
+        "exact_messages": 17,
+        "precision": 0.993,
+        "recall": 0.986,
+        "flagged_for_review": 13,
+        "wrong_but_not_flagged": 0,
+        "fields_tp": 137,
+        "fields_fp": 1,
+        "fields_fn": 2
+      },
+      "fr": {
+        "messages": 5,
+        "type_correct": 5,
+        "exact_messages": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "flagged_for_review": 3,
+        "wrong_but_not_flagged": 0,
+        "fields_tp": 35,
+        "fields_fp": 0,
+        "fields_fn": 0
+      }
+    },
+    "calibration": [
+      {
+        "confidence": "0.00-0.50",
+        "n": 5,
+        "accuracy": 0.8
+      },
+      {
+        "confidence": "0.50-0.80",
+        "n": 13,
+        "accuracy": 1.0
+      },
+      {
+        "confidence": "0.80-0.90",
+        "n": 65,
+        "accuracy": 1.0
+      },
+      {
+        "confidence": "0.90-1.00",
+        "n": 90,
+        "accuracy": 1.0
+      }
+    ],
+    "errors": [
+      "H10 PRECEDENCE: expected 'ROUTINE', got 'URGENT'",
+      "H13 ITEM: expected 'FUEL', not extracted"
+    ],
+    "rows": [
+      {
+        "id": "H01",
+        "type": "CFF",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CFF/OBS=B22/DTG=241830ZOCT26/TGTGRID=18SUJ2338706520/TGT=INF/QTY=12/MISSION=FFE/DESC=Observer B22. Call for fire, enemy infantry, about 12 troops, target grid 18SUJ2338706520, DTG 241830ZOCT26. Fire for ef//"
+      },
+      {
+        "id": "H02",
+        "type": "CFF",
+        "type_confidence": 0.8,
+        "review": [],
+        "draft": "CFF/OBS=ALPHA6/DTG=051410ZNOV26/TGTGRID=17TMK45128834/DIR=2400/TGT=ARM/MISSION=ADJUST/DESC=Callsign ALPHA6 requesting adjust fire on two tanks, tgt 17T MK 4512 8834, bearing 2400 mils, 051410ZNOV26//"
+      },
+      {
+        "id": "H03",
+        "type": "CFF",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CFF/OBS=HAWK2/DTG=241830ZOCT26/TGTGRID=18SUJ2338706520/DIR=1600/TGT=VEH/QTY=3/MISSION=FFE/DESC=Observateur HAWK2. Demande de tir sur 3 véhicules ennemis, cible 18SUJ 23387 06520, azimut 1600 mils. Heure 241830ZOCT26//"
+      },
+      {
+        "id": "H04",
+        "type": "CFF",
+        "type_confidence": 0.78,
+        "review": [
+          "message type uncertain (0.78)",
+          "TGTGRID low confidence (0.70)"
+        ],
+        "draft": "CFF/OBS=OP3/DTG=120945ZSEP26/TGTGRID=18TUL4025185412/TGT=MORTAR/MISSION=SMOKE/DESC=CFF obs OP3: mortar position in treeline, 18T UL 40251 85412, request smoke, 120945ZSEP26.//"
+      },
+      {
+        "id": "H05",
+        "type": "CFF",
+        "type_confidence": 0.99,
+        "review": [
+          "OBSGRID low confidence (0.55)"
+        ],
+        "draft": "CFF/OBS=C14B/DTG=241900ZOCT26/OBSGRID=18SUJ1234056780/TGTGRID=18SUJ1500057000/TGT=INF/MISSION=ILLUM/DESC=Fire mission. Observer C14B at 18SUJ1234056780 sees dismounted troops moving, target 18SUJ1500057000. 241900ZOCT26. Illu//"
+      },
+      {
+        "id": "H06",
+        "type": "CFF",
+        "type_confidence": 0.78,
+        "review": [
+          "message type uncertain (0.78)",
+          "TGTGRID low confidence (0.70)"
+        ],
+        "draft": "CFF/OBS=OP3/DTG=301200ZOCT26/TGTGRID=18SUJ20003000/TGT=ARM/QTY=4/MISSION=ADJUST/DESC=Tir demandé: obs OP3, 4 chars à 18SUJ 2000 3000, 301200ZOCT26, réglage.//"
+      },
+      {
+        "id": "H07",
+        "type": "MEDEVAC",
+        "type_confidence": 0.99,
+        "review": [
+          "PRECEDENCE low confidence (0.45)",
+          "SECURITY low confidence (0.45)",
+          "PRECEDENCE ambiguous: also ROUTINE",
+          "SECURITY ambiguous: also ENEMY"
+        ],
+        "draft": "MEDEVAC/REQID=MV-014/DTG=241830ZOCT26/PICKUP=18SUJ2338706520/FREQ=243.500/PRECEDENCE=URGENT/URGENT_PAT=2/ROUTINE_PAT=1/SECURITY=NO_ENEMY/MARKING=SMOKE/DESC=MEDEVAC request MV-014. Pickup site 18SUJ2338706520, freq 243.500 MHz. 2 urgent, 1 routine. No enemy in area. Marked wit//"
+      },
+      {
+        "id": "H08",
+        "type": "MEDEVAC",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "MEDEVAC/REQID=M9L-22/DTG=150700ZAUG26/PICKUP=18TUL4025185412/FREQ=41.250/PRECEDENCE=PRIORITY/SECURITY=POSSIBLE_ENEMY/MARKING=PANELS/DESC=Casevac req M9L-22, LZ 18T UL 40251 85412, net 41.250 MHz, priority, 1 litter. Possible enemy, panels. 150700ZAUG26//"
+      },
+      {
+        "id": "H09",
+        "type": "MEDEVAC",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "MEDEVAC/REQID=EVAC7/DTG=241830ZOCT26/PICKUP=18SUJ2338706520/FREQ=150.500/PRECEDENCE=URGENT_SURG/SECURITY=ENEMY/MARKING=SMOKE/DESC=Évacuation sanitaire demande EVAC7, zone d'atterrissage 18SUJ2338706520, fréquence 150,500 MHz, urgent chirurgical, enne//"
+      },
+      {
+        "id": "H10",
+        "type": "MEDEVAC",
+        "type_confidence": 0.99,
+        "review": [
+          "PRECEDENCE low confidence (0.45)",
+          "PRECEDENCE ambiguous: also ROUTINE"
+        ],
+        "draft": "MEDEVAC/REQID=MV-001/DTG=010300ZJAN27/PICKUP=18SUJ0001000010/FREQ=38.500/PRECEDENCE=URGENT/URGENT_PAT=0/ROUTINE_PAT=3/SECURITY=ARMED_ESCORT/MARKING=OTHER/DESC=Medevac request MV-001: 3 ambulatory, 0 urgent. Routine. LZ is clear, armed escort needed. Strobe on LZ 18SUJ0001000010.//"
+      },
+      {
+        "id": "H11",
+        "type": "MEDEVAC",
+        "type_confidence": 0.99,
+        "review": [
+          "required field DTG missing"
+        ],
+        "draft": "MEDEVAC/REQID=EVAC12/PICKUP=18SUJ2338706520/FREQ=123.450/PRECEDENCE=URGENT_SURG/SECURITY=NO_ENEMY/MARKING=NONE/CBRN=CHEM/DESC=9-line: request EVAC12, pickup 18SUJ2338706520, 123.450 mhz, urgent surgical, area secure, no marking, chem threat//"
+      },
+      {
+        "id": "H12",
+        "type": "MEDEVAC",
+        "type_confidence": 0.78,
+        "review": [
+          "message type uncertain (0.78)",
+          "PRECEDENCE low confidence (0.45)",
+          "PRECEDENCE ambiguous: also ROUTINE"
+        ],
+        "draft": "MEDEVAC/REQID=MV-030/DTG=281515ZFEB26/PICKUP=18SUJ5000050000/FREQ=250.000/PRECEDENCE=CONVENIENCE/ROUTINE_PAT=1/SECURITY=NO_ENEMY/MARKING=PYRO/DESC=Req MV-030 pickup 18SUJ5000050000 freq 250.000. convenience, no enemy, flares. 1 routine. 281515ZFEB26//"
+      },
+      {
+        "id": "H13",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "required field ITEM missing"
+        ],
+        "draft": "LOGSTAT/UNIT=1PL/DTG=241800ZOCT26/SUPPLY_CLASS=III/ONHAND=40/REQD=200/DAYS=1.5/STATUS=AMBER/LOC=18SUJ2338706520/DESC=LOGSTAT from 1PL. 241800ZOCT26. Class III fuel, 40 on hand, need 200, 1.5 days of supply, status amber. Location 18SUJ23//"
+      },
+      {
+        "id": "H14",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "ITEM low confidence (0.75)"
+        ],
+        "draft": "LOGSTAT/UNIT=A-COY/DTG=301200ZOCT26/SUPPLY_CLASS=I/ITEM=WATER/ONHAND=500/DAYS=3.0/STATUS=GREEN/DESC=Unit A-COY sustainment report 301200ZOCT26: water 500 remaining, class I, status green, 3.0 days//"
+      },
+      {
+        "id": "H15",
+        "type": "LOGSTAT",
+        "type_confidence": 0.8,
+        "review": [
+          "ITEM low confidence (0.75)"
+        ],
+        "draft": "LOGSTAT/UNIT=2PL/DTG=241800ZOCT26/SUPPLY_CLASS=III/ITEM=DIESEL/ONHAND=12/REQD=80/STATUS=RED/DESC=Unité 2PL, état logistique 241800ZOCT26. Diesel, classe 3, 12 restant, besoin 80, statut rouge.//"
+      },
+      {
+        "id": "H16",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "ITEM low confidence (0.75)"
+        ],
+        "draft": "LOGSTAT/UNIT=CSS-3/DTG=111100ZNOV26/SUPPLY_CLASS=V/ITEM=5.56MM/ONHAND=20000/REQD=5000/DAYS=4.5/STATUS=RED/DESC=LOGSTAT. This is CSS-3. 5.56MM class V ammo: onhand 20000, requested 5000, dos 4.5. Red. 111100ZNOV26//"
+      },
+      {
+        "id": "H17",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "UNIT low confidence (0.75)",
+          "ITEM low confidence (0.75)"
+        ],
+        "draft": "LOGSTAT/UNIT=1PL/DTG=241800ZOCT26/SUPPLY_CLASS=I/ITEM=RATIONS/ONHAND=300/REQD=600/DAYS=2.0/STATUS=BLACK/DESC=1PL rations 300 on hand, 2 days, status black, resupply required 600. 241800ZOCT26//"
+      },
+      {
+        "id": "H18",
+        "type": "LOGSTAT",
+        "type_confidence": 0.42,
+        "review": [
+          "message type uncertain (0.42)",
+          "required field SUPPLY_CLASS missing",
+          "ITEM low confidence (0.75)",
+          "LOC low confidence (0.55)"
+        ],
+        "draft": "LOGSTAT/UNIT=B-SQN/DTG=090900ZMAY26/ITEM=BATTERIES/ONHAND=60/REQD=150/STATUS=AMBER/LOC=18SUJ0000100001/DESC=Unit B-SQN reporting batteries, 60 left, need 150, status amber, grid 18SUJ0000100001, 090900ZMAY26.//"
+      },
+      {
+        "id": "H19",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CONTACT/REPORTER=HMCS-A/DTG=241830ZOCT26/DOMAIN=SURFACE/LAT=45.1234/LON=-63.5678/COURSE=270/SPEED=18.5/CLASS=UNKNOWN/DESC=Contact report from HMCS-A, 241830ZOCT26. Unidentified surface vessel at 45.1234N 63.5678W, course 270 degrees, speed 18//"
+      },
+      {
+        "id": "H20",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CONTACT/REPORTER=CP140-1/DTG=241830ZOCT26/DOMAIN=SUBSURFACE/LAT=44.5000/LON=-62.1000/CLASS=HOSTILE/COUNT=1/DESC=Reporting CP140-1: hostile submarine periscope sighted lat 44.5 lon -62.1 at 241830ZOCT26. 1 contact.//"
+      },
+      {
+        "id": "H21",
+        "type": "CONTACT",
+        "type_confidence": 0.78,
+        "review": [
+          "message type uncertain (0.78)"
+        ],
+        "draft": "CONTACT/REPORTER=CH148-3/DTG=241830ZOCT26/DOMAIN=AIR/LAT=44.8000/LON=-62.3000/COURSE=90/SPEED=250.0/CLASS=UNKNOWN/DESC=Ici CH148-3. Aéronef inconnu à 44,8000N 62,3000W, cap 090 degrés, 250 nœuds, 241830ZOCT26.//"
+      },
+      {
+        "id": "H22",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CONTACT/REPORTER=SHORE-2/DTG=241830ZOCT26/DOMAIN=AIR/LAT=45.0000/LON=-60.0000/CLASS=FRIEND/COUNT=2/DESC=Radar track lost, bogey friendly, this is SHORE-2, 241830ZOCT26, position 45.0000 N 60.0000 W, 2 aircraft//"
+      },
+      {
+        "id": "H23",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [
+          "REPORTER low confidence (0.75)",
+          "LAT low confidence (0.70)",
+          "LON low confidence (0.70)"
+        ],
+        "draft": "CONTACT/REPORTER=HMCS-B/DTG=241830ZOCT26/DOMAIN=SURFACE/LAT=46.2000/LON=-61.5000/COURSE=45/SPEED=12.0/CLASS=NEUTRAL/DESC=HMCS-B visual: merchant ship, 46.2000,-61.5000, heading 045, 12 kts. DTG 241830ZOCT26//"
+      },
+      {
+        "id": "H24",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [
+          "CLASS low confidence (0.45)",
+          "CLASS ambiguous: also UNKNOWN"
+        ],
+        "draft": "CONTACT/REPORTER=HMCS-A/DTG=241830ZOCT26/DOMAIN=SUBSURFACE/LAT=45.1000/LON=-63.0000/CLASS=HOSTILE/COUNT=3/DESC=Sonar contact, submarine, red force, bearing unknown. Reporting HMCS-A 241830ZOCT26, lat 45.1000 lon -63.0000, 3 contact//"
+      }
+    ]
+  },
+  "holdout": {
+    "summary": {
+      "messages": 12,
+      "type_correct": 12,
+      "exact_messages": 10,
+      "precision": 0.989,
+      "recall": 0.978,
+      "flagged_for_review": 6,
+      "wrong_but_not_flagged": 0,
+      "fields_tp": 89,
+      "fields_fp": 1,
+      "fields_fn": 2
+    },
+    "by_language": {
+      "en": {
+        "messages": 8,
+        "type_correct": 8,
+        "exact_messages": 7,
+        "precision": 1.0,
+        "recall": 0.984,
+        "flagged_for_review": 4,
+        "wrong_but_not_flagged": 0,
+        "fields_tp": 63,
+        "fields_fp": 0,
+        "fields_fn": 1
+      },
+      "fr": {
+        "messages": 4,
+        "type_correct": 4,
+        "exact_messages": 3,
+        "precision": 0.963,
+        "recall": 0.963,
+        "flagged_for_review": 2,
+        "wrong_but_not_flagged": 0,
+        "fields_tp": 26,
+        "fields_fp": 1,
+        "fields_fn": 1
+      }
+    },
+    "calibration": [
+      {
+        "confidence": "0.00-0.50",
+        "n": 1,
+        "accuracy": 1.0
+      },
+      {
+        "confidence": "0.50-0.80",
+        "n": 1,
+        "accuracy": 1.0
+      },
+      {
+        "confidence": "0.80-0.90",
+        "n": 36,
+        "accuracy": 1.0
+      },
+      {
+        "confidence": "0.90-1.00",
+        "n": 52,
+        "accuracy": 0.981
+      }
+    ],
+    "errors": [
+      "F05 REQID: expected 'EVAC9', got 'EVASAN'",
+      "F09 ITEM: expected '155MM_HE', not extracted"
+    ],
+    "rows": [
+      {
+        "id": "F01",
+        "type": "CFF",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CFF/OBS=HAWK2/DTG=081205ZNOV26/TGTGRID=18SUJ1111122222/TGT=MORTAR/QTY=2/MISSION=ADJUST/DESC=OBS HAWK2 - CFF - 2 mortars behind the bridge, tgt grid 18SUJ1111122222, adjust fire, 081205ZNOV26//"
+      },
+      {
+        "id": "F02",
+        "type": "CFF",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CFF/OBS=C14B/DTG=142200ZDEC26/TGTGRID=18TUL3000040000/TGT=INF/MISSION=SMOKE/DESC=Demande de tir, observateur C14B: une section d'infanterie, objectif 18TUL 30000 40000, fumigène SVP, 142200ZDEC26//"
+      },
+      {
+        "id": "F03",
+        "type": "CFF",
+        "type_confidence": 0.99,
+        "review": [
+          "TGT low confidence (0.45)",
+          "TGT ambiguous: also VEH"
+        ],
+        "draft": "CFF/OBS=OP3/DTG=200100ZJUL26/TGTGRID=17TMK10002000/DIR=3200/TGT=ARM/QTY=5/MISSION=FFE/DESC=Observer OP3 reporting armour, 5 vehicles on the road, direction 3200 mils. Target 17TMK 1000 2000. FFE. 200100ZJUL26//"
+      },
+      {
+        "id": "F04",
+        "type": "MEDEVAC",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "MEDEVAC/REQID=MV-077/DTG=031030ZMAR27/PICKUP=18SUJ3000030000/FREQ=150.000/PRECEDENCE=URGENT/URGENT_PAT=1/SECURITY=ENEMY/MARKING=SMOKE/DESC=MEDEVAC req MV-077 LZ 18SUJ3000030000 net 150.000 MHz. 1 urgent, no ambulatory. Urgent. Hostile fire reported. Smoke. 03//"
+      },
+      {
+        "id": "F05",
+        "type": "MEDEVAC",
+        "type_confidence": 0.78,
+        "review": [
+          "message type uncertain (0.78)"
+        ],
+        "draft": "MEDEVAC/REQID=EVASAN/DTG=191600ZJUN26/PICKUP=18SUJ4000050000/FREQ=160.250/PRECEDENCE=PRIORITY/SECURITY=NO_ENEMY/MARKING=PANELS/DESC=Demande EVASAN EVAC9. Site de ramassage 18SUJ4000050000, fréquence 160,250 MHz. Priorité. Aucun ennemi. Panneaux. 191600//"
+      },
+      {
+        "id": "F06",
+        "type": "MEDEVAC",
+        "type_confidence": 0.78,
+        "review": [
+          "message type uncertain (0.78)",
+          "PRECEDENCE ambiguous: also URGENT"
+        ],
+        "draft": "MEDEVAC/REQID=MV-081/DTG=280800ZAPR26/PICKUP=18TUL5000060000/FREQ=45.500/PRECEDENCE=ROUTINE/URGENT_PAT=0/ROUTINE_PAT=2/SECURITY=ARMED_ESCORT/MARKING=NONE/DESC=Request MV-081, pickup 18TUL5000060000, 2 routine, 0 urgent, precedence routine, escort required, no marking, frequency//"
+      },
+      {
+        "id": "F07",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "ITEM low confidence (0.75)"
+        ],
+        "draft": "LOGSTAT/UNIT=3PL/DTG=261300ZOCT26/SUPPLY_CLASS=III/ITEM=DIESEL/ONHAND=1200/REQD=800/DAYS=3.5/STATUS=GREEN/DESC=Unit 3PL logistics status: diesel 1200 on hand, 800 required, 3.5 days of supply, status green. 261300ZOCT26//"
+      },
+      {
+        "id": "F08",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "required field ITEM missing"
+        ],
+        "draft": "LOGSTAT/UNIT=CSS-3/DTG=241800ZOCT26/SUPPLY_CLASS=I/ONHAND=900/REQD=1500/DAYS=2.5/STATUS=AMBER/DESC=Unité CSS-3, ravitaillement: eau 900 en stock, besoin 1500, 2,5 jours, statut jaune, 241800ZOCT26//"
+      },
+      {
+        "id": "F09",
+        "type": "LOGSTAT",
+        "type_confidence": 0.99,
+        "review": [
+          "required field ITEM missing"
+        ],
+        "draft": "LOGSTAT/UNIT=B-SQN/DTG=100600ZSEP26/SUPPLY_CLASS=V/ONHAND=48/REQD=120/DAYS=1.0/STATUS=RED/LOC=18SUJ6000070000/DESC=From B-SQN: 155MM_HE class V ammo onhand 48, need 120, 1 day, status red, location 18SUJ6000070000, 100600ZSEP26//"
+      },
+      {
+        "id": "F10",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CONTACT/REPORTER=HMCS-B/DTG=241830ZOCT26/DOMAIN=AIR/LAT=44.1000/LON=-61.2000/COURSE=180/SPEED=90.0/CLASS=UNKNOWN/COUNT=2/DESC=Reporting HMCS-B. Visual: unidentified aircraft, helicopter, 2 contacts, 44.1000N 61.2000W, heading 180, speed 90 kts. 2//"
+      },
+      {
+        "id": "F11",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CONTACT/REPORTER=HMCS-A/DTG=241830ZOCT26/DOMAIN=SUBSURFACE/LAT=43.9000/LON=-60.5000/COURSE=270/CLASS=HOSTILE/COUNT=1/DESC=Ici HMCS-A: sous-marin ennemi repéré par sonar, lat 43,9000 lon -60,5000, cap 270, 1 contact, 241830ZOCT26//"
+      },
+      {
+        "id": "F12",
+        "type": "CONTACT",
+        "type_confidence": 0.99,
+        "review": [],
+        "draft": "CONTACT/REPORTER=SHORE-2/DTG=241830ZOCT26/DOMAIN=SURFACE/LAT=47.0000/LON=-59.0000/COURSE=90/SPEED=14.0/CLASS=NEUTRAL/DESC=Contact from SHORE-2 at 241830ZOCT26: neutral merchant vessel at 47.0000N 59.0000W, 14 knots, course 090 degrees//"
+      }
+    ]
+  }
+}
